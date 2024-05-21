@@ -1,0 +1,10 @@
+<?php
+/** @var $block Marketplacer\AvalaraIntegration\Block\InitStoreCode */
+/** @var $secureRenderer Magento\Framework\View\Helper\SecureHtmlRenderer */
+?>
+<?php $storeCode = /* @noEscape */ $this->getStoreCode();
+$scriptString = <<<script
+        window.avaTaxStoreCode = '{$storeCode}';
+script;
+?>
+<?= /* @noEscape */ $secureRenderer->renderTag('script', [], $scriptString, false) ?>

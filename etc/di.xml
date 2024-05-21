@@ -2,10 +2,10 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Marketplacer\AvalaraIntegration\Api\Data\TaxMarketplacerInterface" type="Marketplacer\AvalaraIntegration\Model\TaxMarketplacer" />
-    <type name="ClassyLlama\AvaTax\Framework\Interaction\Tax">
+    <type name="Avalara\AvaTax\Framework\Interaction\Tax">
         <plugin name="calculate-the-tax-at-the-seller-s-address" type="Marketplacer\AvalaraIntegration\Plugin\Framework\Interaction\TaxPlugin" sortOrder="100"/>
     </type>
-    <type name="\ClassyLlama\AvaTax\Model\Tax\Sales\Total\Quote\Tax">
+    <type name="Avalara\AvaTax\Model\Tax\Sales\Total\Quote\Tax">
         <plugin name="total-tax" type="Marketplacer\AvalaraIntegration\Plugin\Tax\Sales\Total\Quote\TaxPlugin" sortOrder="100"/>
     </type>
     <type name="Magento\Catalog\Api\ProductRepositoryInterface">

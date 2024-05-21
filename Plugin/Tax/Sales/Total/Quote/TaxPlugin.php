@@ -18,15 +18,15 @@ class TaxPlugin
     }
 
     /**
-     * @param \ClassyLlama\AvaTax\Model\Tax\Sales\Total\Quote\Tax $quoteTax
+     * @param \Avalara\AvaTax\Model\Tax\Sales\Total\Quote\Tax $quoteTax
      * @param callable $proceed
      * @param Quote $quote
      * @param ShippingAssignmentInterface $shippingAssignment
      * @param Total $total
-     * @return \ClassyLlama\AvaTax\Model\Tax\Sales\Total\Quote\Tax
+     * @return \Avalara\AvaTax\Model\Tax\Sales\Total\Quote\Tax
      */
     public function aroundCollect(
-        \ClassyLlama\AvaTax\Model\Tax\Sales\Total\Quote\Tax $quoteTax,
+        \Avalara\AvaTax\Model\Tax\Sales\Total\Quote\Tax $quoteTax,
         callable                                            $proceed,
         Quote                                               $quote,
         ShippingAssignmentInterface $shippingAssignment,

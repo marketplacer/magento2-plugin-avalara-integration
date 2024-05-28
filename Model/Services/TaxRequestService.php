@@ -3,13 +3,13 @@ declare(strict_types=1);
 
 namespace Marketplacer\AvalaraIntegration\Model\Services;
 
-use ClassyLlama\AvaTax\Framework\Interaction\Address;
-use ClassyLlama\AvaTax\Framework\Interaction\MetaData\MetaDataObjectFactory;
-use ClassyLlama\AvaTax\Framework\Interaction\MetaData\ValidationException;
-use ClassyLlama\AvaTax\Framework\Interaction\Tax;
-use ClassyLlama\AvaTax\Helper\Rest\Config as RestConfig;
-use ClassyLlama\AvaTax\Framework\Interaction\MetaData\MetaDataObject;
-use ClassyLlama\AvaTax\Model\Logger\AvaTaxLogger;
+use Avalara\AvaTax\Framework\Interaction\Address;
+use Avalara\AvaTax\Framework\Interaction\MetaData\MetaDataObjectFactory;
+use Avalara\AvaTax\Framework\Interaction\MetaData\ValidationException;
+use Avalara\AvaTax\Framework\Interaction\Tax;
+use Avalara\AvaTax\Helper\Rest\Config as RestConfig;
+use Avalara\AvaTax\Framework\Interaction\MetaData\MetaDataObject;
+use Avalara\AvaTax\Model\Logger\AvaTaxLogger;
 use Magento\Framework\DataObject;
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Exception\NoSuchEntityException;

@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Marketplacer\AvalaraIntegration\Plugin\Framework\Interaction;
 
-use ClassyLlama\AvaTax\Framework\Interaction\Tax;
+use Avalara\AvaTax\Framework\Interaction\Tax;
 use Magento\Framework\DataObject;
 use Magento\Quote\Api\Data\ShippingAssignmentInterface;
 use Magento\Quote\Model\Quote;

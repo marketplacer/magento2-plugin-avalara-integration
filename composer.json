@@ -6,7 +6,7 @@
   "require": {
     "marketplacer/magento2-plugin-base": "^2.0.0",
     "marketplacer/magento2-plugin-seller-api": "^2.0.0",
-    "avalara/avatax-magento": "^2.4.1"
+    "avalara/avatax-magento": "^2.7"
   },
   "autoload": {
     "files": [
